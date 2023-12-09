@@ -6,13 +6,14 @@ const HeroSection = (props) => {
     const { title, productName, price, index, image } = props
     return <View style={{ backgroundColor: '#9CE5CB', paddingHorizontal: 36, paddingTop: 32 }}>
         <Text style={style.title}>{title}</Text>
-        <Text style={style.itemText}>{productName + 'hjdsahjgashdgashjdghja   jhdhjsaghd  khasdjh   askdhasgd  jadhgas jgsdjhgfas ahsgdjhasgd jasgdjhasgd jasgdjhasgd jghashdga'}</Text>
+        <Text style={style.itemText}>{productName}</Text>
         <Text style={style.priceHeadingText}>Price</Text>
         <Text style={style.priceText}>{price}</Text>
         <AnimatedImage src={image}
             style={{ height: 250, width: 217, position: 'absolute', bottom: 0, right: 0 }}
             sharedTransitionTag={`sharedTag${index}`}
         />
+        <View style={{height:300}}/>
     </View>
 }
 

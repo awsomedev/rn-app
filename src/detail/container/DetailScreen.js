@@ -10,7 +10,7 @@ const DetailScreen = (props)=>{
 
     return <ScrollView  contentOffset={{ x: 0, y: 400 }}
     >
-        <HeroSection title={title} productImage={productName} image={image} price={price} index={index}/>
+        <HeroSection title={title} productName={productName} image={image} price={price} index={index}/>
         {/* Mock view to render space for scroll view */}
         <View  style={{height:600}} />
     </ScrollView>
